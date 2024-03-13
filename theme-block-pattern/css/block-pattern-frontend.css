@@ -1,0 +1,77 @@
+.banner-section {
+    width: auto;
+    height: auto;
+}
+.banner-section img, .feature-section img, .service-section img {
+    width: 100%;
+}
+.banner-section-content {
+    margin: 10% 0 !important;
+}
+.banner-section-btn a.wp-block-button__link:hover {
+    background-color: #fff !important;
+    color:#90c908 !important;
+} 
+.feature-section.wp-block-columns {
+    position: relative;
+    z-index: 1;
+    margin-top: -6%;
+    gap: 1.5em !important;
+}
+.feature-box {
+    padding: 20px 15px;
+    box-shadow: 0 0 15px 2px #ddd;
+}
+.feature-box:hover {
+background-color: #90c908 !important;
+}
+.feature-box:hover h3,
+.feature-box:hover p {
+    color: #fff !important;
+}
+
+.service-section h3::after {
+    background-color: #90c908;
+    content: "";
+    display: block;
+    margin: 10px auto;
+    width: 100px;
+    height: 3.7px;
+    position: absolute;
+    left:46%;
+}
+.project-box  {
+    overflow: hidden;
+    text-align: left;
+    border-radius: 5px;
+}
+.project-box-content {
+    left:0;
+    bottom:0;
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    z-index: 2;
+    transition: all 0.3s ease 0s;
+}
+.project-box:hover .project-box-content {
+    opacity: 1;
+}
+@media  screen and (max-width:992px) and (min-width:767px) {
+   .feature-section.wp-block-columns, .service-section .wp-block-columns{
+    flex-wrap: nowrap !important;
+   }
+   .service-section h3::after {
+      left: 42% !important;
+   }
+}
+@media screen and (max-width: 720px) {
+    .service-section h3::after {
+        left: 34% !important;
+     }
+}
+@media  screen and (max-width:1439px) and (min-width:1023px) {
+    .service-section h3::after {
+        left: 45% !important;
+     }
+}

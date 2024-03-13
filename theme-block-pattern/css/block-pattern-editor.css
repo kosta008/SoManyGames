@@ -1,0 +1,39 @@
+.banner-section {
+    width: auto;
+    height: auto;
+}
+.banner-section img, 
+.feature-section img, 
+.service-section img {
+    width: 100%;
+}
+.service-section h3 {
+    position: relative !important;
+}
+.service-section h3::before {
+    background-color: #90c908;
+    content: "" !important;
+    display: block;
+    margin: 10px auto;
+    opacity: 1;
+    width: 100px;
+    height: 3.7px;
+    position: absolute !important;
+    left:44%;
+    top: 44px;
+    clear: both;
+}
+.feature-box {
+    padding: 20px 15px;
+    box-shadow: 0 0 15px 2px #ddd;
+}
+.feature-section.wp-block-columns .feature-box:hover {
+    background-color: #90c908 !important ;
+    }
+.feature-section.wp-block-columns .feature-box:hover h3,
+.feature-section.wp-block-columns .feature-box:hover p {
+    color: #fff !important;
+}
+.service-section .project-box img {
+    border-radius: 5px;
+}
